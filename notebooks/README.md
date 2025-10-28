@@ -147,11 +147,7 @@ correlations = df[numeric_cols].corr()['final_grade'].sort_values(ascending=Fals
 ```python
 plt.figure(figsize=(10, 6))
 plt.hist(df['final_grade'], bins=30, edgecolor='black')
-plt.title('Distribuição das Notas Finais', fontsize=14, fontweight='bold')
-plt.xlabel('Nota Final', fontsize=12)
-plt.ylabel('Frequência', fontsize=12)
-plt.grid(alpha=0.3)
-plt.show()
+plt.title('Distribuição das Notas Finais', fontsize=14, 
 ```
 
 ### 4. Documentação
@@ -176,37 +172,7 @@ correlação com `final_grade` (r=0.75, p<0.001), seguido por
 
 ---
 
-## 🚫 Erros Comuns
-
-### 1. Caminhos Absolutos
-
-❌ **ERRADO:**
-```python
-df = pd.read_csv('/home/usuario/projeto/data/raw/dataset.csv')
-```
-
-✅ **CORRETO:**
-```python
-df = pd.read_csv('../data/raw/students_performance.csv')
-```
-
-### 2. Código Sem Output
-
-❌ **ERRADO:**
-```python
-# Carregar dados
-df = pd.read_csv('data.csv')
-```
-
-✅ **CORRETO:**
-```python
-# Carregar dados
-df = pd.read_csv('../data/raw/students_performance.csv')
-print(f"✅ Dataset carregado com sucesso!")
-print(f"Shape: {df.shape}")
-```
-
-### 3. Células Fora de Ordem
+### Células Fora de Ordem
 
 ⚠️ Garanta que as células podem ser executadas **sequencialmente** do início ao fim.
 
