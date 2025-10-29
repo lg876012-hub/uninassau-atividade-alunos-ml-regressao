@@ -205,7 +205,7 @@ Seu notebook será avaliado pelos seguintes critérios:
 - ✅ Todas as variáveis analisadas
 
 **Visualizações (20%):**
-- ✅ Mínimo 15 gráficos
+- ✅ Mínimo 4 gráficos
 - ✅ Títulos descritivos
 - ✅ Labels nos eixos
 - ✅ Legendas quando necessário
